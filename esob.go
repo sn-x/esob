@@ -39,9 +39,7 @@ func main() {
 		}
 	}
 
-	UnsubscribeOrderbookChannel <- UnsubscribeOrderbook{
-		Unsubscribe: "Unsubscribe",
-	}
+	UnsubscribeOrderbookChannel <- UnsubscribeOrderbook{}
 
 	orderbooks := latestWebsocketOrderbook(OrderbookChannel)
 

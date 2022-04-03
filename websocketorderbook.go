@@ -10,9 +10,7 @@ import (
 )
 
 // Control channel
-type UnsubscribeOrderbook struct {
-	Unsubscribe string
-}
+type UnsubscribeOrderbook struct{}
 
 // Orderbooks contains multiple orderbook strucsts
 type Orderbooks struct {
